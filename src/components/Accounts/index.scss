@@ -34,8 +34,13 @@
 @media (min-width: 720px) {
   .account {
     flex-direction: row;
+    & .button.big{
+      width: 200px;
+    }   
+
   }
   .account-content-wrapper.cta {
     flex: 0;
   }
+  
 }

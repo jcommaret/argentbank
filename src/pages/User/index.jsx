@@ -32,7 +32,7 @@ export default function User() {
           Tony Jarvis!
         </h1>
         <Link to="edit">
-          <button class="edit-button">Edit Name</button>
+          <button class="button">Edit Name</button>
         </Link>
       </div>
 

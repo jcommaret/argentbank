@@ -20,7 +20,7 @@ export default function Sign() {
           <input type="checkbox" id="remember-me" />
           <label for="remember-me">Remember me</label>
         </div>
-        <Link to="../user/12" class="sign-in-button">
+        <Link to="../user/12" class="button big">
           Sign In
         </Link>
       </form>

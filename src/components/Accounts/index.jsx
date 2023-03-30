@@ -17,7 +17,7 @@ export default function Accounts({ accounts }) {
           </div>
           <div className="account-content-wrapper cta">
             <Link to="transactions">
-              <button className="transaction-button">View transactions</button>
+              <button className="button big">View transactions</button>
             </Link>
           </div>
         </section>

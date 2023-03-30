@@ -30,8 +30,8 @@ export default function Edit() {
           <br />
           Tony Jarvis!
         </h1>
-        <button class="save-button">Save</button>
-        <button class="cancel-button">Cancel</button>
+        <button class="button small">Save</button>
+        <button class="button small">Cancel</button>
       </div>
 
       <Accounts accounts={accounts} />
