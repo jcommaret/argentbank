@@ -24,18 +24,17 @@ const accounts = {
 
 export default function User() {
   return (
-    <main class="main bg-dark">
-      <div class="header">
+    <main className="main bg-dark">
+      <div className="header">
         <h1>
           Welcome back
           <br />
           Tony Jarvis!
         </h1>
         <Link to="edit">
-          <button class="button">Edit Name</button>
+          <button className="button">Edit Name</button>
         </Link>
       </div>
-
       <Accounts accounts={accounts} />
     </main>
   )

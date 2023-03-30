@@ -23,15 +23,15 @@ const accounts = {
 
 export default function Edit() {
   return (
-    <main class="main bg-dark">
-      <div class="header">
+    <main className="main bg-dark">
+      <div className="header">
         <h1>
           Welcome back
           <br />
           Tony Jarvis!
         </h1>
-        <button class="button small">Save</button>
-        <button class="button small">Cancel</button>
+        <button className="button small">Save</button>
+        <button className="button small">Cancel</button>
       </div>
 
       <Accounts accounts={accounts} />

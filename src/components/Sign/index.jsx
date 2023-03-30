@@ -4,23 +4,23 @@ import { Link } from "react-router-dom"
 
 export default function Sign() {
   return (
-    <section class="sign-in-content">
-      <i class="fa fa-user-circle sign-in-icon"></i>
+    <section className="sign-in-content">
+      <i className="fa fa-user-circle sign-in-icon"></i>
       <h1>Sign In</h1>
       <form>
-        <div class="input-wrapper">
+        <div className="input-wrapper">
           <label for="username">Username</label>
           <input type="text" id="username" />
         </div>
-        <div class="input-wrapper">
+        <div className="input-wrapper">
           <label for="password">Password</label>
           <input type="password" id="password" />
         </div>
-        <div class="input-remember">
+        <div className="input-remember">
           <input type="checkbox" id="remember-me" />
           <label for="remember-me">Remember me</label>
         </div>
-        <Link to="../user/12" class="button big">
+        <Link to="../user/12" className="button big">
           Sign In
         </Link>
       </form>
