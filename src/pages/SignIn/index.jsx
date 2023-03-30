@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom"
 
+import "./index.scss"
+
 export default function SignIn() {
   return (
     <main class="main bg-dark">

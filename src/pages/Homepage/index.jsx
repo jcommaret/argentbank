@@ -1,6 +1,8 @@
 import iconChat from "../../assets/img/icon-chat.png"
 import iconMoney from "../../assets/img/icon-money.png"
 import iconSecurity from "../../assets/img/icon-security.png"
+import Hero from "../../components/Hero"
+import Features from "../../components/Features"
 
 const heroContent = {
   title: "Promoted Content",
@@ -36,26 +38,8 @@ const features = {
 export default function Homepage() {
   return (
     <main>
-      <div class="hero">
-        <section class="hero-content">
-          <h2 class="sr-only">{heroContent.title}</h2>
-          {heroContent.desc.map((hero) => (
-            <p class="subtitle">{hero.title}</p>
-          ))}
-          <p class="text">{heroContent.text}</p>
-        </section>
-      </div>
-
-      <section class="features">
-        <h2 class="sr-only">{features.title}</h2>
-        {features.desc.map((feature) => (
-          <div class="feature-item">
-            <img src={feature.icon} alt="Chat Icon" class="feature-icon" />
-            <h3 class="feature-item-title">{feature.title}</h3>
-            <p>{feature.text}</p>
-          </div>
-        ))}
-      </section>
+      <Hero heroContent={heroContent} />
+      <Features features={features} />
     </main>
   )
 }

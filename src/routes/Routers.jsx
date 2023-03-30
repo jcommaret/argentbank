@@ -6,7 +6,6 @@ import SignIn from "../pages/SignIn"
 import User from "../pages/User"
 import Edit from "../pages/Edit"
 import Transactions from "../pages/Transactions"
-
 export default function Routers() {
   return (
     <Routes>

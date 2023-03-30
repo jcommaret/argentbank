@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import Accounts from "../../components/Accounts"
 
 const accounts = {
   title: "Accounts",
@@ -34,23 +34,7 @@ export default function Edit() {
         <button class="cancel-button">Cancel</button>
       </div>
 
-      <h2 class="sr-only">{accounts.title}</h2>
-      {accounts.desc.map((account) => (
-        <section className="account">
-          <div className="account-content-wrapper">
-            <h3 className="account-title">{account.title}</h3>
-            <p className="account-amount">{account.amount}</p>
-            <p className="account-amount-description">
-              {account.amountDescription}
-            </p>
-          </div>
-          <div className="account-content-wrapper cta">
-            <Link to="transactions">
-              <button className="transaction-button">View transactions</button>
-            </Link>
-          </div>
-        </section>
-      ))}
+      <Accounts accounts={accounts} />
     </main>
   )
 }

@@ -1,3 +1,4 @@
+import "./index.scss"
 import logo from "../../assets/img/argentBankLogo.png"
 import { Link } from "react-router-dom"
 
