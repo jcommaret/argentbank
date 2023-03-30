@@ -1,3 +1,5 @@
+@use "../../styles/colors.scss" as c;
+
 @import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
 html {
@@ -5,7 +7,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: c.$blue;
 }
 
 body {
@@ -21,7 +23,7 @@ body {
     text-decoration: none;
     &:hover{
       text-decoration: underline;
-      color:#fff;
+      color:c.$white;
       text-underline-offset: 4px;
     }
   }
@@ -48,15 +50,15 @@ body {
 }
 
 .header {
-  color: #fff;
+  color: c.$white;
   margin-bottom: 2rem;
 }
 
 .button{
   cursor: pointer;
-  border-color: #00bc77;
-  background-color: #00bc77;
-  color: #fff;
+  border-color: c.$green-2;
+  background-color: c.$green-2;
+  color: c.$white;
   font-weight: bold;
   padding: 10px;
   margin-right:5px;

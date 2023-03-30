@@ -1,7 +1,9 @@
+@use '../../styles/colors.scss' as c;
+
 .sign-in{
   &-content{
     box-sizing: border-box;
-    background-color: white;
+    background-color: c.$white;
     width: 300px;
     margin: 0 auto;
     margin-top: 3rem;
