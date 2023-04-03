@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom"
 import Accounts from "../../components/Accounts"
+import { useState } from "react"
 
 const accounts = {
   title: "Accounts",
@@ -23,18 +23,68 @@ const accounts = {
 }
 
 export default function User() {
+  const [isEdit, setEdit] = useState(false)
+  const [firstName, setFirstName] = useState("Tony")
+  const [lastName, setLastName] = useState("Jarvis")
+
+  const fNameChange = (e) => {
+    setFirstName(e.target.value)
+  }
+  const LNameChange = (e) => {
+    setLastName(e.target.value)
+  }
+
+  const handleCancel = () => {
+    setFirstName("Tony")
+    setLastName("Jarvis")
+    setEdit(false)
+  }
   return (
     <main className="main bg-dark">
       <div className="header">
-        <h1>
-          Welcome back
-          <br />
-          Tony Jarvis!
-        </h1>
-        <Link to="edit">
-          <button className="button">Edit Name</button>
-        </Link>
+        {isEdit ? (
+          <>
+            <h1>
+              Welcome back
+              <br />
+              <input
+                onChange={fNameChange}
+                className="save"
+                label="firstName"
+                type="text"
+                placeholder={firstName}
+              />
+              <input
+                onChange={LNameChange}
+                className="save"
+                label="lastName"
+                type="text"
+                placeholder={lastName}
+              />
+            </h1>
+
+            <button type="reset" onClick={handleCancel} className="button">
+              Cancel
+            </button>
+
+            <button onClick={() => setEdit(!isEdit)} className="button">
+              Save
+            </button>
+          </>
+        ) : (
+          <>
+            <h1>
+              Welcome back
+              <br />
+              {firstName} {lastName} !
+            </h1>
+            <button onClick={() => setEdit(!isEdit)} className="button">
+              Edit Name
+            </button>
+          </>
+        )}
       </div>
+
       <Accounts accounts={accounts} />
     </main>
   )
