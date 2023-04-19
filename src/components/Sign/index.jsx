@@ -1,15 +1,17 @@
 import "./index.scss"
+import React, { useState } from "react"
 import { Link } from "react-router-dom"
-import { getToken } from "../../services/services"
+import { Login } from "../../services/services"
 
 export default function Sign() {
+  const [token, setToken] = useState("")
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+
   const handleSubmit = (e) => {
     e.preventDefault()
-    const email = "tony@stark.com"
-    const password = "password123"
-    getToken(email, password)
+    Login(email, password)
   }
-
   return (
     <section className="sign-in-content">
       <i className="fa fa-user-circle sign-in-icon"></i>
@@ -17,11 +19,23 @@ export default function Sign() {
       <form onClick={handleSubmit}>
         <div className="input-wrapper">
           <label htmlFor="username">Username</label>
-          <input type="text" id="username" required />
+          <input
+            type="text"
+            id="username"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
         </div>
         <div className="input-wrapper">
           <label htmlFor="password">Password</label>
-          <input type="password" id="password" required />
+          <input
+            type="password"
+            id="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
         </div>
         <div className="input-remember">
           <input type="checkbox" id="remember-me" />
