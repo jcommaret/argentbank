@@ -4,7 +4,6 @@ import { Link } from "react-router-dom"
 import { Login } from "../../services/services"
 
 export default function Sign() {
-  const [token, setToken] = useState("")
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
 
@@ -12,6 +11,7 @@ export default function Sign() {
     e.preventDefault()
     Login(email, password)
   }
+
   return (
     <section className="sign-in-content">
       <i className="fa fa-user-circle sign-in-icon"></i>
