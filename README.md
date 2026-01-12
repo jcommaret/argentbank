@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# Argent Bank
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Application web de banking développée avec React et Vite.
 
-## Available Scripts
+## 🚀 Technologies utilisées
 
-In the project directory, you can run:
+- **React 19.2** - Bibliothèque JavaScript pour la création d'interfaces utilisateur
+- **Vite 7.3** - Outil de build moderne et rapide
+- **React Router 7.9** - Gestion du routing
+- **Sass** - Préprocesseur CSS
+- **React 19** - Dernière version avec les nouvelles fonctionnalités
 
-### `npm start`
+## 📋 Prérequis
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node.js (version 18 ou supérieure recommandée)
+- npm ou yarn
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Installation
 
-### `npm test`
+1. Cloner le repository
+```bash
+git clone [URL_DU_REPO]
+cd argentbank
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Installer les dépendances
+```bash
+npm install
+```
+
+## 💻 Scripts disponibles
+
+### `npm run dev`
+
+Lance l'application en mode développement.\
+Ouvrez [http://localhost:3000](http://localhost:3000) pour la voir dans votre navigateur.
+
+La page se recharge automatiquement lorsque vous effectuez des modifications.\
+Profitez du Hot Module Replacement (HMR) ultra-rapide de Vite !
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Compile l'application pour la production dans le dossier `build`.\
+L'application est optimisée pour les meilleures performances.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Le build est minifié et les noms de fichiers incluent des hashes.\
+Votre application est prête à être déployée !
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `npm run preview`
 
-### `npm run eject`
+Prévisualise la version de production localement.\
+Utile pour tester le build avant le déploiement.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🏗️ Structure du projet
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+argentbank/
+├── public/              # Fichiers statiques
+├── src/
+│   ├── assets/         # Images et ressources
+│   ├── components/     # Composants React réutilisables
+│   ├── pages/          # Pages de l'application
+│   ├── routes/         # Configuration du routing
+│   └── index.jsx       # Point d'entrée de l'application
+├── vite.config.js      # Configuration Vite
+└── package.json        # Dépendances et scripts
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🎨 Composants principaux
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Header** - En-tête de navigation
+- **Footer** - Pied de page
+- **Hero** - Bannière d'accueil
+- **Features** - Section des fonctionnalités
+- **Accounts** - Gestion des comptes
+- **Sign** - Composants d'authentification
 
-## Learn More
+## 📱 Pages
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Homepage** - Page d'accueil
+- **SignIn** - Page de connexion
+- **User** - Profil utilisateur
+- **Edit** - Édition du profil
+- **Transactions** - Historique des transactions
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🔧 Configuration Vite
 
-### Code Splitting
+Le projet utilise Vite avec les configurations suivantes :
+- Port de développement : 3000
+- Ouverture automatique du navigateur
+- Support complet de React avec Fast Refresh
+- Support de Sass intégré
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📚 En savoir plus
 
-### Analyzing the Bundle Size
+- [Documentation Vite](https://vitejs.dev/)
+- [Documentation React](https://react.dev/)
+- [Documentation React Router](https://reactrouter.com/)
+- [Documentation Sass](https://sass-lang.com/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🌟 Pourquoi Vite ?
 
-### Making a Progressive Web App
+Vite offre de nombreux avantages par rapport aux outils traditionnels :
+- ⚡ Démarrage instantané du serveur de développement
+- 🔥 Hot Module Replacement (HMR) ultra-rapide
+- 📦 Build optimisé avec Rollup
+- 🎯 Configuration minimale
+- 💪 Support natif de ES modules
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Développé avec ❤️ pour Argent Bank
